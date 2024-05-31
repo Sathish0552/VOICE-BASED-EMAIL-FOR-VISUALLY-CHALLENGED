@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Based Email</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+body {
+  background-image :url('https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/voice.jpg');
+  font-family: "TIMES NEW ROMAN";
+}
+.h1{
+    font-size:50px;
+    color: white;
+}
+.button{
+  background-color: Orange;
+  font-size: 40px;
+}
+
+    </style>
+
+</head>
+<body>
+<script>
+	function openInNewTab() {
+		window.location.replace('http://127.0.0.1:8000/welc/');
+	}
+	function openInNewTab1() {
+		window.location.replace('http://127.0.0.1:8000/regisopen');
+	}
+	function vld() {
+		window.location.replace('http://127.0.0.1:8000/openlog');
+	}
+</script>
+
+
+      <br><form> <center><h1 style="color:white;font-size:70px"> Welcome to Voice Based Email For Blind </h1> </center><br>
+
+        <center>
+            <button value="Register" id="register"  style="font-size: 50px;background-color: orange">Register</button><br><br>
+             <center><h2 style="color:white;font-size: 40px"> OR </h2> </center>
+            <button  value="Login" id="login" style="font-size: 50px;background-color: orange">Login</button>
+            <script>
+            var res={{check}};
+            if(res==0){
+            openInNewTab();
+            }
+            </script>
+            <script>
+            var num={{count}};
+            if(num==2){
+            openInNewTab1();
+            }
+            </script>
+        <script>
+            var num1={{count}};
+            if(num1==3){
+            vld();
+            }
+            </script>
+
+
+
+        </form></center>
+</body>
+</html>

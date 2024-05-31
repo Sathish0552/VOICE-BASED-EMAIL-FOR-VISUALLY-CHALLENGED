@@ -1,0 +1,44 @@
+import smtplib
+import speech_recognition as sr
+from email.message import EmailMessage
+import pyttsx3
+
+r=sr.Recognizer()
+tts=pyttsx3.Engine()
+
+def mic():
+    with sr.Microphone() as source:
+        print("Speak now...")
+        voice=r.listen(source)
+        data=r.recognize_google(voice)
+        print(data)
+        return data.lower()
+
+dict={"santoshi":"santhoshig25@gmail.com","sathish":"chintu.sathish2002@gmail.com","satish":"chintu.sathish2002@gmail.com"}
+def speak(text):
+    tts.say(text)
+    tts.runAndWait()
+
+def send_mail(receiver,subject,message):
+    server=smtplib.SMTP("smtp.gmail.com",587)
+    server.starttls()
+    server.login("yellavenisathish@gmail.com","yrxdhykmaplecltm")
+    email=EmailMessage()
+    email["From"]="yellavenisathish@gmail.com"
+    email["To"]=receiver
+    email["Subject"]=subject
+    email.set_content(message)
+    server.send_message(email)
+
+def main_fun():
+    speak("To whom do you want to send this email")
+    receive=mic()
+    body=dict[receive]
+    speak("Speak the subject of this email")
+    subject=mic()
+    speak("Speak the message of this email")
+    message=mic()
+
+    send_mail(body,subject,message)
+    print("Your email has been sent")
+main_fun()

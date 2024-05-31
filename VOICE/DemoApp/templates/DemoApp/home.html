@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+    body{
+    background-image :url('https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/voice.jpg');>
+    }
+    h2{
+
+    font-size:50px;
+    }
+    </style>
+</head>
+<body>
+<script>
+    function homePg() {
+		window.location.replace('http://127.0.0.1:8000/mai/');
+	}
+	function composeMail() {
+		window.location.replace('http://127.0.0.1:8000/compose123/');
+	}
+	function inboxMail(){
+		window.location.replace('http://127.0.0.1:8000/inbox123/');
+	}
+	function logout(){
+		window.location.replace('http://127.0.0.1:8000/logout123/');
+	}
+</script>
+     <center><h2 style="font-size: 70px;color:white;">Home Page</h2></center><br><br>
+        <center><form method="get" >
+          <br>  <button  id="compose" style="font-size: 50px;background-color: orange">1.Compose a new mail </button><br><br>
+            <br> <button  id="inbox" style="font-size: 50px;background-color: orange">2.Check the Inbox </button><br><br>
+             <br>   <button  id="logout" style="font-size: 50px;background-color: orange">3.Logout</button><br><br>
+            </form>
+            <script>
+            var val={{check}};
+            if(val==1){
+            homePg();
+            }
+            </script>
+                <script>
+                var num={{count}};
+                document.write(num);
+                if(num==1){
+                composeMail();
+                }
+            if(num==2)
+            {
+            inboxMail();
+            }
+            if(num==3)
+            {
+            logout();
+            }
+
+            </script>
+</body>
+</html>

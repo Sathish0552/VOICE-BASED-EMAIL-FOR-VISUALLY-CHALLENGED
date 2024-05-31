@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Based Email</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+body {
+  background-image :url('https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/voice.jpg');>
+  font-family: "TIMES NEW ROMAN";
+}
+h1,h2{
+    font-size:50px;
+    color:"white";
+    display: inline;
+}
+    </style>
+
+</head>
+<body>
+<script>
+	function openInNewTab() {
+		window.location.replace('http://127.0.0.1:8000/new/');
+	}
+	function openInNewTab1() {
+		window.location.replace('http://127.0.0.1:8000/pass12');
+	}
+	function vld() {
+		window.location.replace('http://127.0.0.1:8000/val');
+	}
+	function home() {
+		window.location.replace('http://127.0.0.1:8000/home123');
+	}
+</script>
+
+
+      <br> <center><h1 style="font-size: 65px;color: White"> Welcome to Voice Based Email For Blind </h1> </center>
+        <br><br><br><br><br>
+        <center><h2 style="font-size: 55px;color: White">Login Page</h2></center><br><br>
+        <center><form method="get" >
+            <h2 style="font-size: 45px;color: White">Email:</h2>
+            <input type="email" style="font-size: 40px;color:black;" value="{{emailput}}" ><br><br>
+           <h2 style="font-size: 45px;color: White">Password:</h2>
+            <input type ="password" value="{{passw1}}" style="font-size: 40px;color:black;font-color:black;">
+            <script>
+            var res={{check}};
+            if(res==0){
+            openInNewTab();
+            }
+            </script>
+            <script>
+            var num={{count}};
+            if(num==2){
+            openInNewTab1();
+            }
+            </script>
+        <script>
+            var num1={{count}};
+            if(num1==3){
+            vld();
+            }
+            if(num1==4){
+            home();
+            }
+            </script>
+
+
+
+        </form></center>
+
+    </div>
+</body>
+</html>

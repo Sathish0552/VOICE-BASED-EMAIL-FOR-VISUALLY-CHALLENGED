@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Based Email</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+body {
+  background-image :url('https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/voice.jpg');>
+  font-family: "TIMES NEW ROMAN";
+}
+h1,h2{
+    display: inline;
+}
+input{
+    font-size:45px;
+    color: black;
+}
+    </style>
+
+</head>
+<body>
+<script>
+	function openInNewTab() {
+		window.location.replace('http://127.0.0.1:8000/regisemail');
+	}
+	function openInNewTab1() {
+		window.location.replace('http://127.0.0.1:8000/regissecurity');
+	}
+	function vld() {
+		window.location.replace('http://127.0.0.1:8000/regispasswd');
+	}
+	function updat() {
+		window.location.replace('http://127.0.0.1:8000/update1');
+	}
+</script>
+
+
+      <br> <center><h1 style="color:white;font-size:90px">Voice Based Email For Blind </h1> </center>
+    <br><br><br>
+       <br> <center><h2 style="color:orange;font-size:80px">Register</h2></center>
+        <center><form method="get" ><br><br>
+            <div style="text-align:center;">
+            <h2 style="color:white;font-size:50px">Email:</h2><input type="email" value="{{emailput}}" id="email1" size="30" ><br><br>
+            <h2 style="color:white;font-size:50px">Security Code:</h2><input type ="text" value="{{security1}}" size="30"><br><br>
+            <h2 style="color:white;font-size:50px">Password:</h2><input type ="text" value="{{passwd1}}" size="30"><br><br>
+            </div>
+            <script>
+            var res={{check}};
+            if(res==0){
+            openInNewTab();
+            }
+            </script>
+            <script>
+            var num={{count}};
+            if(num==2){
+            openInNewTab1();
+            }
+            </script>
+        <script>
+            var num1={{count}};
+            if(num1==3){
+            vld();
+            }
+            if(num1==4){
+            updat();
+            }
+            </script>
+
+
+
+        </form></center>
+
+    </div>
+</body>
+</html>
