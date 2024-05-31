@@ -23,37 +23,37 @@ The system is completely built on interactive voice response, making it user-fri
 
 The welcome page of the system will be displayed as below, which asks users to register or log in through speech.
 
-![Welcome Page](VOICE-BASED-EMAIL-FOR-VISUALLY-CHALLENGED/Images/welcome.png)
+![Welcome Page](Images/welcome.png)
 
 ### Registration Page
 
 New users need to register to the system by speaking their Email ID and password.
 
-![Registration Page](VOICE-BASED-EMAIL-FOR-VISUALLY-CHALLENGED/Images/register.png)
+![Registration Page](Images/register.png)
 
 ### Login Page
 
 Registered users can log in by speaking out their Email ID and password.
 
-![Login Page](VOICE-BASED-EMAIL-FOR-VISUALLY-CHALLENGED/Images/login.png)
+![Login Page](Images/login.png)
 
 ### Home Page
 
 If the user details are valid, it will redirect to the Home page. Here, the user can compose a new mail, access the Inbox, or log out from the system.
 
-![Home Page](VOICE-BASED-EMAIL-FOR-VISUALLY-CHALLENGED/Images/homepage.png)
+![Home Page](Images/homepage.png)
 
 ### Compose Page
 
 Here, the user is allowed to compose a mail by giving recipient name, subject, and message in the form of speech.
 
-![Compose Page](VOICE-BASED-EMAIL-FOR-VISUALLY-CHALLENGED/Images/compose.png)
+![Compose Page](Images/compose.png)
 
 ### Inbox Page
 
 Here, the user can access the mails that are received in the form of voice.
 
-![Inbox Page](VOICE-BASED-EMAIL-FOR-VISUALLY-CHALLENGED/Images/inbox.png)
+![Inbox Page](Images/inbox.png)
 
 ## Getting Started
 
