@@ -62,7 +62,7 @@ Follow these steps to set up and use our voice-based email system:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Sathish0552/VOICE-BASED-EMAIL-FOR-VISUALLY-CHALLENGED.git
    cd your-repository
    ```
 
